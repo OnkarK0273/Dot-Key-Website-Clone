@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Home Page</title>
+    <style>
+
+#navbar{
+height:150px;
+width:100%;
+border:2px solid red;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 3000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+#Lovedcustomer{
+    height:400px;
+    width:100%;
+   
+    
+}
+.text1{
+    height:30px;
+    width:100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+}
+.text2{
+    height:40px;
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+#spin{
+    height:290px;
+    width:100%;
+    
+}
+#spin>img{
+    width:85%;
+    height:100%;
+    margin-left:12ch;
+    border-radius: 20px;
+
+}
+
+#newArrivals{
+    height:480px;
+    width:100%;
+    border:2px solid red;
+}
+
+#arrivals{
+    height:320px;
+    width:100%;
+    border:2px solid black;
+}
+
+#nutrition{
+    height:50px;
+    width:100%;
+   
+}
+#spotlight{
+    height:400px;
+    width:100%;
+    
+}
+#spotdiv{
+    height:290px;
+    width:95%;
+  
+    display:flex;
+    margin:auto;
+}
+.spotdiv1{
+    height:100%;
+    width:90%;
+   
+    margin-left:4px;
+}
+.spotdiv1 img{
+    height:100%;
+    width:100%;
+    border-radius:12px;
+}
+#newdiv{
+    height:300px;
+    width:95%;
+    
+    margin: auto;
+    margin-top:1ch;
+}
+#newdiv>img{
+    height:100%;
+    width:100%;
+    border-radius:12px;
+}
+#top{
+    height:430px;
+    width:100%;
+     border:2px solid brown;
+}
+#download{
+    height:80px;
+    width:100%;
+    
+    margin-top:1ch;
+}
+#download>img{
+    height:100%;
+    width:100%;
+}
+
+#ing{
+    height:480px;
+    width:100%;
+   
+}
+
+#shop{
+    height:40px;
+    width:100%;
+  }
+
+#shopbtn{
+    height:100%;
+    width:12%;
+   
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:black;
+    }
+
+    #shop>a{
+      text-decoration: none;
+    }
+
+    #skincare{
+      height:480px;
+      width:100%;
+     
+    } 
+    
+    #free{
+      height:400px;
+      width:100%;
+     
+      margin-top:4ch;
+    }
+    #free img{
+      width:100%;
+      height:100%;
+    }
+    #love{
+      height:470px;
+      width:100%;
+     
+    }
+    #loveimg{
+      height:400px;
+      width:100%;
+     
+    }
+    #loveimg img{
+      width:100%;
+      height:100%;
+      
+    }
+    #clean{
+      height:340px;
+      width:100%;
+      margin-top:2ch;
+     
+    }
+    #one{
+      height:74px;
+      width:100%;
+     
+    }
+    #two{
+      height:100px;
+      width:100%;
+      
+    }
+    .twoA{
+      height:50px;
+      width:70%;
+    
+      margin: auto;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+     
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+
+    #three{
+      height:150px;
+      width:100%;
+      
+      margin-top:2ch;
+      
+    }
+    #fourth{
+      height:130px;
+      width:100%;
+    
+      display:flex;
+      margin-top:2ch;
+    }
+   #fourthOne{
+    height:100%;
+    width:60%;
+   
+    margin: auto;
+    display: flex;
+   }
+   .img1{
+    height:100%;
+    width:20%;
+    margin:auto;
+   
+   }
+   .img1 img{
+    height:100%;
+    width:100%;
+   }
+
+   #gif{
+    height:300px;
+    width:100%;
+    border:2px solid brown;
+    margin-top:2ch;
+   }
+
+   #brand{
+    height:350px;
+    width:100%;
+    
+   }
+   
+   #brandOne{
+    height:50px;
+    width:80%;
+   
+    margin:auto;
+    margin-top:1ch;
+    display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   font-weight: bold;
+
+  }
+  #brandTwo{
+    height:170px;
+    width:80%;
+   
+    margin: auto;
+    display: flex;
+   
+  }
+  #brandTextOne{
+  height:90%;
+  width:20%;
+  
+  margin:auto;
+  font-size:25px;
+  font-family: sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  #brandTextTwo{
+  height:100%;
+  width:20%;
+ 
+  margin:auto;
+  font-size:25px;
+  font-family: sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  #brandThree{
+    height:120px;
+    width:80%;
+    
+    margin: auto;
+    display:flex;
+  }
+  .brandImgOne{
+    height:100%;
+    width:30%;
+   
+    margin: auto;
+    margin-left: 10px;
+  }
+  .brandImgOne img{
+    width:40%;
+    height:100%;
+    margin-left:14ch;
+  }
+   
+    </style>
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_17.jpg?v=1663324415" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+         <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_18.jpg?v=1663324415" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/CATE_DESK_18.jpg?v=1663324418" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_19.jpg?v=1663324415" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/CATE_DESK_17.jpg?v=1663324415" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+<!--loved customer-->
+<div id="Lovedcustomer">
+<div class="text1">Loved By</div>
+<div class="text2">10 Lakh+ Customers</div>
+<div id="spin">
+    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3_Sale_Banner_Desktop_copy_5.jpg?v=1664257999">
+</div>
+</div>
+
+<!--new arrivals-->
+<div id="newArrivals">
+    <div class="text1">SHOP OUR</div>
+    <div class="text2">NEW ARRIVALS</div>
+    <div id="arrivals">
+
+        <!---slideshow using array of objects-->
+    </div>
+</div>
+
+<!--bestseller-->
+<div id="newArrivals">
+    <div class="text1">OUR</div>
+    <div class="text2">BEST SELLERS</div>
+    <div id="nutrition"></div>
+    <div id="arrivals">
+
+        <!---slideshow using array of objects-->
+    </div>
+</div>   
+
+<!--spotlight section-->
+
+<div id="spotlight">
+    <div class="text1">IN THE</div>
+    <div class="text2">SPOTLIGHT</div>
+    <div id="spotdiv">
+        <div class="spotdiv1">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_24.jpg?v=1663587081">
+        </div>
+        <div class="spotdiv1">
+            <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_22.jpg?v=1663324771">
+        </div>
+    </div>
+</div>
+
+    <div id="newdiv">
+    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_21.jpg?v=1663324772">
+    </div>
+
+
+    <!--top categories section-->
+    <div id="top">
+      top section
+
+    </div>
+
+    <!--download section-->
+    <div id="download">
+      <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/0_new_appArtboard_1_1_1.png?v=1656572545">
+    </div>
+
+    <!--ingridients section-->
+    <div id="ing">
+      <div class="text1">SHOP BY</div>
+    <div class="text2">INGREDIENTS</div>
+      <div class="main-carousel">
+        <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4C-Ingredient_c982a1f9-7880-49cc-918d-de954c4869d7.jpg?v=1662534604"> </div>
+        <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4E-Ingredient_93fa35cb-9567-4296-ad26-718ef6fb9ece.jpg?v=1662534604"></div>
+        <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4A-Ingredient_a52bf031-90a7-4b4f-afb1-1786ddf2f2e0.jpg?v=1662534604"></div>
+        <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4F-Ingredient_73eaecaf-da67-4a0a-8884-ab3215f5d1ce_1.jpg?v=1662534604"></div>
+        <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4D-Ingredient_2c86db10-ce47-4ff7-9792-2ebf0192e29e_1.jpg?v=1662534604"></div>
+      
+      </div> 
+
+
+    </div>
+
+    <div id="shop">
+  <a href="#"><div id="shopbtn"> SHOP NOW ></div></a> 
+    </div>
+
+
+    <!---skincare section-->
+
+<div id="skincare">
+  <div class="text1">GUIDE TO</div>
+  <div class="text2">SKINCARE</div>
+  <div class="main-carousel">
+    <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/serum.jpg?v=1652438356"> </div>
+    <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/glow_3.jpg?v=1652438348"></div>
+    <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/acne_3_7d4b5389-228e-42ce-9008-0454cff9e3d2.jpg?v=1652438447"></div>
+    <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/moist.jpg?v=1652438356"> </div>
+  </div>
+</div>
+
+<!--free section-->
+<div id="free">
+  <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/D_K_Homepage_BOGO_Banner_Desktop_Version.gif?v=1659006084">
+   </div>
+
+   <!--love section-->
+ <div id="love">
+  <div class="text2">LOVE IS GREATER</div>
+  <div class="text1">WHEN SHARED</div>
+
+ <div id="loveimg"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-2_6_1.png?v=1656572658"></div> 
+ </div>
+
+
+ <!--clean beauty section-->
+<div id="clean">
+  <div id="one">
+    <div class="text2">CLEAN BEAUTY</div>
+    <div class="text1">WITH UNCOMPROMISED EFFICACY</div>
+  </div>
+  <div id="two">
+    <div class="twoA"><p>At Dot & Key, we strive to find the missing "dots" in your skincare regime and are obsessed with providing</p></div>
+    <div class="twoA"><p>solutions or "keys" to these.</p></div>
+  </div>
+  <div id="three">
+    <div class="twoA"><p>Our revolutionary products are crafted with utmost care and love for you. By blending luxurious botanicals</p></div>
+    <div class="twoA"><p>with  high performaance actives,  we bring to you clean formulations that are absolutely safe, delightfully  gentle</p></div>
+    <div class="twoA"><p>and unquestionably effective.</p></div>
+  </div>
+   </div>
+  
+   <!--four  flex images-->
+   <div id="fourth">
+    <div id="fourthOne">
+  <div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-ICONS.png?v=1645770027"></div>
+  <div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-ICONS_b6233563-9f3e-43f6-b158-5205886e2120.png?v=1645779546"></div>
+  <div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-ICONS.png?v=1645770027"></div>
+  <div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-ICONS.png?v=1645770027"></div>
+  </div>
+   </div>
+  
+
+   <!--gif section-->
+
+<div id="gif">
+  gif section
+  </div>
+  
+  
+  <!--brand section-->
+  <div id="brand">
+  <div id="brandOne"><p>AS SEEN IN</p></div>
+  <div id="brandTwo">
+    <div id="brandTextOne"><p>"Latest and<br> greatest natural<br>&nbsp products for <br> safe,non-toxic <br>&nbsp skincare." </p></div>
+    <div id="brandTextTwo"><p>"Dot & Key are <br>&nbsp &nbsp hoping to <br>spotlight all the<br>body parts you<br>forget to took<br>&nbsp &nbsp &nbsp after."</p>"</p></div>
+    <div id="brandTextOne"><p>"Even a 10 step <br>routine can have<br>blind spots. Dot <br>&nbsp & key fills in <br>&nbsp those gaps."</p></div>
+  </div>
+  <div id="brandThree">
+    <div class="brandImgOne"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-3_9501c881-18bc-4482-a41a-bae5979fd0b9_180x.png?v=1614742030"> </div>
+    <div class="brandImgOne"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Vogue-3-min_180x.png?v=1614754318"></div>
+    <div class="brandImgOne"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-2_8a4b49eb-9d7c-4864-954a-fe48fb05a208_180x.png?v=1614742030"></div>
+  </div>
+  </div>
+  
+
+
+<!--sliding ingredients code-->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+  $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround:true,
+  freeScroll:true,
+});
+</script>
+
+
+</body>
+</html>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
