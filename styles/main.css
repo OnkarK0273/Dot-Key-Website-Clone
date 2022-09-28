@@ -1,0 +1,61 @@
+  #navbar{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+ 
+  #navbar > div {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar > div > div {
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+  }
+
+  /* #navbar div{
+    position: relative;
+    z-index: 0;
+  } */
+
+  
+
+  form {
+    width: 50%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  #theButton {
+    background-color: white;
+    border: none;
+  }
+  .right {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .button1 {
+    background-color: white;
+    border: none;
+  }
