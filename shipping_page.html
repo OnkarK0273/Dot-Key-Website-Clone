@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping - Dot & Key - Checkout</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #payment-page-header > img {
+      width: 100%;
+      height: 130pt;
+    }
+    #payment-section {
+      display: flex;
+      margin-top: -5px;
+    }
+    #payment-section > #product-payment {
+      flex: 5.7;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    #payment-section > #product-data {
+      flex: 4.3;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      background-color: #fafafa;
+    }
+    #page-option {
+      display: flex;
+      justify-content: center;
+      width: 55%;
+      gap: 2%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    #page-option > .page-name-only {
+      text-decoration: none;
+      color: #ff6781;
+      font-size: 12px;
+      font-family: sans-serif;
+      -webkit-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+    }
+    #page-option > .right {
+      text-decoration: none;
+      /* color: #423a3a7e; */
+      font-size: 12px;
+      font-family: sans-serif;
+      -webkit-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+    }
+    #contact_div {
+        border-radius: 5px;
+        width: 80%;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    #contact_div > #contact-1, #contact-2 {
+       display: flex;
+        justify-content:space-between;
+        width: 95%;
+        margin: auto;
+    }
+    #contact_div > #contact-1, #contact-2 > p {
+        font-family: sans-serif;
+        font-size: 14px;
+        color: rgb(121, 95, 61);
+        font-weight: 540;
+    }
+    #contact_div > #contact-1> p:first-child {
+        width: 10%;
+    }
+    #contact_div > #contact-1 > p:nth-child(2) {
+       width: 65%;
+    }
+    #contact_div > #contact-1 > a > p {
+        width: 10%;
+        color: #ff6781;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+    #contact_div > #contact-2> p:first-child {
+        width: 10%;
+    }
+    #contact_div > #contact-2 > p:nth-child(2) {
+       width: 65%;
+       
+    }
+    #contact_div > #contact-2 > a > p {
+        width: 10%;
+        color: #ff6781;
+        font-size: 13px;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+    #form {
+      width: 80%;
+      margin: auto;
+      font-family: sans-serif;
+      margin-top: 7%;
+    }
+    #form > p {
+      font-size: 18px;
+      margin-bottom: 5%;
+    }
+    #last-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      margin-top: 3.5%;
+    }
+    #last-options > a {
+      font-family: sans-serif;
+      font-size: 15px;
+      text-decoration: none;
+      color: #ff6781;
+    }
+    #last-options > button {
+      padding: 20px 20px;
+      background-color: #616160;
+      color: white;
+      border-radius: 5px;
+      border: transparent;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    #bottom > a {
+      font-family: sans-serif;
+      font-size: 12px;
+      text-decoration: none;
+      color: #ff6781;
+      margin-left: 3%;
+    }
+    #bottom {
+      width: 70%;
+      margin-left: 8%;
+      padding-bottom: 2%;
+    }
+    #line {
+      margin-top: 8%;
+      width: 80%;
+    }
+    #checkout_shipping {
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 5px;
+        justify-content: start;
+        align-items: center;
+    }
+    #checkout_shipping > input {
+       margin-left: 2%;
+    }
+    #checkout_shipping > #upi-card {
+        font-family: sans-serif;
+        font-size: 15px;
+        color: #616160;
+        margin: 10px;
+    }
+    #price {
+        display: flex;
+        justify-content: end;
+        width: 20%;
+        margin-left: 15%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+  </style>
+  <body>
+    <div id="payment-page-header">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0328/8134/4651/collections/Dot-_-Key-Top-Banner_1536x427.jpg?v=1600433697"
+        alt=""
+      />
+    </div>
+    <div id="payment-section">
+      <div id="product-payment">
+        <div id="page-option">
+          <a class="page-name-only" href="">Cart</a>
+          <a class="right" href="">></a>
+          <a class="page-name-only" href="information-page.html">Information</a>
+          <a class="right" href="">></a>
+          <a class="page-name-only" href="shipping_page.html">Shipping</a>
+          <a class="right" href="">></a>
+          <a class="page-name-only" href="">Payment</a>
+        </div>
+       <div id="contact_div">
+        <div id="contact-1">
+            <p>Contact</p>
+            <p id="login_email"></p>
+          <a href="information-page.html"><p>Change</p></a>  
+        </div>
+        <hr style="width: 95%;">
+        <div id="contact-2">
+            <p>Ship to</p>
+            <p id="proper_address">
+               </p>
+           <a href="information-page.html"><p>Change</p></a> 
+        </div>
+       </div>
+       <div id="form">
+        <p>Shipping address</p>
+        <div id="checkout_shipping">
+          <input id="radio" type="radio" checked="checked">
+          <p id="upi-card">Standard (UPI/ Cards/ NetBanking/ Wallets)</p>
+          <p id="price">₹75.00</p>
+        </div>
+       </div>
+        <div id="last-options">
+          <a href="information-page.html">< Return to information</a>
+          <button id="continue_shopping">Continue to shipping</button>
+        </div>
+     
+      <hr id="line" />
+      <div id="bottom">
+        <a
+          href="https://www.dotandkey.com/36185538692/policies/refund-policy.html?locale=en-IN"
+          >Refund policy</a
+        >
+        <a
+          href="https://www.dotandkey.com/36185538692/policies/shipping-policy.html?locale=en-IN"
+          >Shipping policy</a
+        >
+        <a
+          href="https://www.dotandkey.com/36185538692/policies/privacy-policy.html?locale=en-IN"
+          >Privacy policy</a
+        >
+        <a
+          href="https://www.dotandkey.com/36185538692/policies/terms-of-service.html?locale=en-IN"
+          >Terms of service</a
+        >
+      </div>
+      </div>
+      <div id="product-data"></div>
+    </div>
+  </body>
+</html>
+
+<script src="shipping_page.js"></script>
