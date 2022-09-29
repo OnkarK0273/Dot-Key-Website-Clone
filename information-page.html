@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information - Dot & Key - Checkout</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #payment-page-header > img {
+      width: 100%;
+      height: 130pt;
+    }
+    #payment-section {
+      display: flex;
+      margin-top: -5px;
+    }
+    #payment-section > #product-payment {
+      flex: 5.7;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    #payment-section > #product-data {
+      flex: 4.3;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      background-color: #fafafa;
+    }
+    #page-option {
+      display: flex;
+      /* border: solid; */
+      justify-content: center;
+      width: 55%;
+      gap: 2%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    #page-option > .page-name-only {
+      text-decoration: none;
+      color: #ff6781;
+      font-size: 12px;
+      font-family: sans-serif;
+      -webkit-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+    }
+    #page-option > .right {
+      text-decoration: none;
+      /* color: #423a3a7e; */
+      font-size: 12px;
+      font-family: sans-serif;
+      -webkit-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+    }
+    #form {
+      width: 80%;
+      margin: auto;
+      font-family: sans-serif;
+    }
+    #form > p {
+      font-size: 18px;
+      margin-bottom: 5%;
+    }
+    form {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+    form > select {
+      padding: 2%;
+      border-radius: 5px;
+      font-size: 14px;
+      color: rgb(123, 89, 45);
+      border: solid 1px rgb(119, 85, 44);
+    }
+    form > select > option {
+      font-size: 14px;
+    }
+    form > div > select {
+      padding: 2%;
+      border-radius: 5px;
+      border: solid 1px rgb(205, 175, 138);
+      font-size: 14px;
+      color: rgb(123, 89, 45);
+    }
+    form > input {
+      padding: 2%;
+      border-radius: 5px;
+      border: solid 1px rgb(87, 59, 24);
+    }
+    form > input::placeholder {
+      font-size: 14px;
+    }
+    form > div > input {
+      padding: 2%;
+      border-radius: 5px;
+      border: solid 1px rgba(122, 97, 64, 0.598);
+    }
+    form > div > input::placeholder {
+      font-size: 14px;
+    }
+    #whatsapp {
+      display: flex;
+      font-size: 13px;
+      gap: 1%;
+    }
+    #contact-info {
+      font-family: sans-serif;
+      width: 80%;
+      margin: auto;
+    }
+    #update-checkbox {
+      display: flex;
+      font-family: sans-serif;
+      gap: 1%;
+      font-size: 14px;
+    }
+    #email {
+      border: solid 1px;
+      height: 100px;
+    }
+    #pin-sec {
+      display: flex;
+      justify-content: space-between;
+    }
+    #pin-sec > input,
+    #pin-sec > select {
+      width: 29%;
+    }
+    #name {
+      display: flex;
+      justify-content: space-between;
+    }
+    #name > input {
+      width: 44%;
+    }
+    #last-options {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2%;
+      align-items: center;
+    }
+    #last-options > a {
+      font-family: sans-serif;
+      font-size: 15px;
+      text-decoration: none;
+      color: #ff6781;
+    }
+    #last-options > button {
+      padding: 20px 18px;
+      background-color: #616160;
+      color: white;
+      border-radius: 5px;
+      border: transparent;
+      font-size: 15px;
+    }
+    #bottom > a {
+      font-family: sans-serif;
+      font-size: 12px;
+      text-decoration: none;
+      color: #ff6781;
+      margin-left: 3%;
+    }
+    #bottom {
+      width: 70%;
+      margin-left: 8%;
+      padding-bottom: 2%;
+    }
+    #line {
+      margin-top: 8%;
+      width: 80%;
+    }
+  </style>
+  <body>
+    <div id="payment-page-header">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0328/8134/4651/collections/Dot-_-Key-Top-Banner_1536x427.jpg?v=1600433697"
+        alt=""
+      />
+    </div>
+    <div id="payment-section">
+      <div id="product-payment">
+        <div id="page-option">
+          <a class="page-name-only" href="">Cart</a>
+          <a class="right" href="">></a>
+          <a class="page-name-only" href="information-page.html">Information</a>
+          <a class="right" href="">></a>
+          <a class="page-name-only" href="">Shipping</a>
+          <a class="right" href="">></a>
+          <a class="page-name-only" href="">Payment</a>
+        </div>
+        <div id="contact-info">
+          <p>Contact information</p>
+          <div id="email"></div>
+          <div id="update-checkbox">
+            <input type="checkbox" />
+            <p>Keep me up to date on news and exclusive offers</p>
+          </div>
+        </div>
+        <div id="form">
+          <p>Shipping address</p>
+          <form>
+            <select
+             id="country"
+              placeholder="Country/region"
+            >
+              <option selected="selected" value="India">India</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option disabled="disabled" value="---">---</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Bhutan">Bhutan</option>
+              <option value="British Indian Ocean Territory">
+                British Indian Ocean Territory
+              </option>
+              <option value="Brunei">Brunei</option>
+              <option value="Cambodia">Cambodia</option>
+              <option value="China">China</option>
+              <option value="Christmas Island">Christmas Island</option>
+              <option value="Cocos (Keeling) Islands">
+                Cocos (Keeling) Islands
+              </option>
+              <option value="Hong Kong">Hong Kong SAR</option>
+              <option value="India">India</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Israel">Israel</option>
+              <option value="Japan">Japan</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Kazakhstan">Kazakhstan</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Kyrgyzstan">Kyrgyzstan</option>
+              <option value="Lao People's Democratic Republic">Laos</option>
+              <option value="Lebanon">Lebanon</option>
+              <option value="Macao">Macao SAR</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Maldives">Maldives</option>
+              <option value="Mongolia">Mongolia</option>
+              <option value="Myanmar">Myanmar (Burma)</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Oman">Oman</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Palestinian Territory, Occupied">
+                Palestinian Territories
+              </option>
+              <option value="Philippines">Philippines</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Russia">Russia</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Singapore">Singapore</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Taiwan">Taiwan</option>
+              <option value="Tajikistan">Tajikistan</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Turkmenistan">Turkmenistan</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="Uzbekistan">Uzbekistan</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Yemen">Yemen</option>
+            </select>
+            <div id="name">
+              <input type="text" id="first_name" placeholder="First name" />
+              <input type="text" id="last_name" placeholder="Last name" />
+            </div>
+            <input type="text" id="address" placeholder="Address" />
+            <input
+              type="text"
+              id="apartment"
+              placeholder="Apartment, suite, etc. (optional)"
+            />
+            <div id="pin-sec">
+              <input type="text" id="city" placeholder="City" />
+              <select id="state">
+                <option disabled="">State</option>
+                <option>Andaman and Nicobar Islands</option>
+                <option>Andhra Pradesh</option>
+                <option>Arunachal Pradesh</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Chandigarh</option>
+                <option>Chhattisgarh</option>
+                <option>Dadra and Nagar Haveli</option>
+                <option>Daman and Diu</option>
+                <option>Delhi</option>
+                <option>Goa</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Himanchal Pradesh</option>
+                <option>Jammu and Kashmir</option>
+                <option>Jharkhand</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Ladakh</option>
+                <option>Lakshadweep</option>
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Manipur</option>
+                <option>Meghalaya</option>
+                <option>Mizoram</option>
+                <option>Nagaland</option>
+                <option>Odisha</option>
+                <option>Puducherry</option>
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Sikkim</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Tripura</option>
+                <option>Uttar Pradesh</option>
+                <option>Uttarakhand</option>
+                <option>West Bengal</option>
+              </select>
+              <input type="number" id="pin_code" placeholder="PIN code" />
+            </div>
+            <input type="number" id="number" placeholder="+91" />
+            <div id="whatsapp">
+              <input type="checkbox" />
+              <p>Get Order Updates On WhatsApp</p>
+            </div>
+          </form>
+          <div id="last-options">
+            <a href="">< Return to cart</a>
+            <button id="continue_shopping">Continue to shipping</button>
+          </div>
+        </div>
+        <hr id="line" />
+        <div id="bottom">
+          <a
+            href="https://www.dotandkey.com/36185538692/policies/refund-policy.html?locale=en-IN"
+            >Refund policy</a
+          >
+          <a
+            href="https://www.dotandkey.com/36185538692/policies/shipping-policy.html?locale=en-IN"
+            >Shipping policy</a
+          >
+          <a
+            href="https://www.dotandkey.com/36185538692/policies/privacy-policy.html?locale=en-IN"
+            >Privacy policy</a
+          >
+          <a
+            href="https://www.dotandkey.com/36185538692/policies/terms-of-service.html?locale=en-IN"
+            >Terms of service</a
+          >
+        </div>
+      </div>
+      <div id="product-data"></div>
+    </div>
+  </body>
+</html>
+
+<script src="information-page.js"></script>
