@@ -4,7 +4,7 @@ let img2 = ["https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_18_900x
 let img3 = ["https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3_21_900x.jpg?v=1663393830","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6-CICA-NIGHT-GEL_360x.jpg?v=1663393073","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/5-Lip-Plumpin-Mask_47c8041c-839b-4d4c-8663-4dcafeda13ae_360x.jpg?v=1663392224","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6-Probiotics-Gel_360x.jpg?v=1663392956"]
 
 // array of product posters
-let poster1 = ["https://i.ibb.co/M6sHds9/poster1-1.png","https://i.ibb.co/yVFkh1H/poster1-2.png","https://i.ibb.co/6ZYkdhZ/poster1-3.png","https://i.ibb.co/Zg6gmmq/poster1-4.png"]
+let poster1 = ["https://i.ibb.co/M6sHds9/poster1-1.png","https://i.ibb.co/d0rCtp3/newposter.png","https://i.ibb.co/6ZYkdhZ/poster1-3.png","https://i.ibb.co/Zg6gmmq/poster1-4.png"]
 let poster2 = ["https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_413_2.png?v=1661946820","https://i.ibb.co/YWSGymN/poster2-2.png","https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_267.png?v=1655064323","https://i.ibb.co/88yFRDj/poster2-4.png"]
 let poster3 = ["https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_371.png?v=1660645343","https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_373.png?v=1660645343","https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_367.png?v=1660645343","https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_369.png?v=1660645343"]
 
@@ -64,7 +64,7 @@ function constructor(img1,img2,img3,poster1,poster2,poster3,slider1,slider2,slid
 let N = img1.length
 
 
-let data = []
+let data =  []
 
 // push all product object in arr
 
@@ -77,27 +77,92 @@ for(let i=0;i<N;i++){
 
 console.log(data)
 
+// to push/show add to card data to arr
+let arr = JSON.parse(localStorage.getItem("addtocard")) || []
+
+let count = 4.2
+// append product data 
 const append = ()=>{
 let cont = document.querySelector("#grid")
     data.map(({img1,img2,img3,poster1,poster2,poster3,slider1,slider2,slider3,product_name,price_old,price_new,benifets1,benifets2,benifets3,benifets4,benifets5})=>{
-
+        count += 0.1
         let div = document.createElement("div")
 
         let image = document.createElement("img")
         image.src = img1
+        // when click on img push all data to localstorage
+        image.addEventListener("click",()=>{
+            let obj = {
+                img1,
+                img2,
+                img3,
+                poster1,
+                poster2,
+                poster3,
+                slider1,
+                slider2,
+                slider3,
+                product_name,
+                price_new,
+                benifets1,
+                benifets2,
+                benifets3,
+                benifets4,
+                benifets5
+            }
+            localStorage.setItem("productData",JSON.stringify(obj))
+            console.log(obj)
+        })
 
+        let star = document.createElement("div")
+        star.id = "star"
+
+        let i = document.createElement("i")
+        i.setAttribute("class", "material-icons")
+        i.style.fontSize = "15px"
+        i.style.color = "yellow"
         
-        
+        let a = document.createElement("a")
+        a.innerText = `⭐ ${count.toFixed(2)}/5`
+        star.append(i,a)
+
+        let name = document.createElement("P")
+        name.innerText = product_name
+
+        let price = document.createElement("p")
+        price.innerText = `Rs: ${price_new}.00`
+        price.style.color = "#FF6781"
+
+        let button = document.createElement("button")
+        button.innerText = "ADD TO CART"
+
+        // push data to add to card localstorage
+        button.addEventListener("click",()=>{
+            let obj = new addtocard(product_name,img1,price_new)
+            arr.push(obj)
+            localStorage.setItem("addtocard",JSON.stringify(arr))
+            
+        })
+       
 
 
-        div.append()
+
+        div.append(image,star,name,price,button)
 
         cont.append(div)
         
     })
     
 }
-append()
+append(data)
+
+function addtocard (n,i,p){
+    this.name = n,
+    this.img = i,
+    this.price = p,
+    this.size = "100ml"
+
+}
 
 
 
