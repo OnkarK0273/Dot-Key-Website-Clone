@@ -1,0 +1,62 @@
+#fmain {
+    color: rgb(103, 101, 100);
+    display: flex;
+    margin: auto;
+    font-family: Arial;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #fmain > div > p {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(65, 59, 52);
+  }
+  a {
+    color: rgb(112, 107, 101);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #follw {
+    display: flex;
+    margin-top: 20px;
+  }
+  #follw > a {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  #inp>input{
+ border-top: 0ch;
+ border-right: 0ch;
+ border-left: 0ch;
+ text-align: center;
+ padding: 10px;
+ color: black;
+ margin: 10px;
+ width: 200px;
+ font-size: 15px;
+ 
+  }
+  #inp>button{
+    padding: 12px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    border: 0ch;
+cursor: pointer;
+  }
+ 
+  #down{
+    margin-top: 20px;
+    background-color: rgb(191, 139, 240);
+    
+    border: 0ch;
+    padding: 15px;
+    font-size: 17px;
+}
+#down>a{
+    color: aliceblue;
+}
