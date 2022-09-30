@@ -537,7 +537,7 @@
     width:80%;
     margin: auto;
     display: flex;
-    column-gap: 20px;
+    column-gap: 10px;
     justify-content: space-around;
     border: 0px solid black;
 
@@ -555,12 +555,13 @@
     cursor: pointer;
 }
 #grid>div>P{
+
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    width: 90%;
-}
+    width: 90%; 
+} */
 #grid>div>button{
     background-color: gray;
     color: white;
