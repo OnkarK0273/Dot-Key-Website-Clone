@@ -60,3 +60,9 @@ cursor: pointer;
 #down>a{
     color: aliceblue;
 }
+hr{
+    margin: 0px;
+    padding: 0%;
+    color: aqua;
+    width: 100%;
+}
