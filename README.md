@@ -1,5 +1,5 @@
 
-# dotandkey Website Clone
+# DOT&KEY Website Clone
 
 Dot & Key is an online marketplace. Paraben-free cosmetics such as body lotions, face serums, hand cream, toner, face masks, and cleansers are available in the company's product catalogue, offering clients with cruelty-free goods that meet their lifestyle needs.
 
