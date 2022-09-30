@@ -29,7 +29,7 @@
 #navbar{
   height:150px;
   width:100%;
-  border:2px solid red;
+  
   }
   
   * {box-sizing:border-box}
@@ -144,11 +144,11 @@
   
   }
   
-  #newArrivals{
+  /*#newArrivals{
       height:480px;
       width:100%;
      
-  }
+  }*/
   #nutrition{
       height:50px;
       width:100%;
