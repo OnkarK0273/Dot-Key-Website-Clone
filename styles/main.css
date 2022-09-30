@@ -6,7 +6,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -126,4 +126,46 @@
   }
   label{
     float: left;
+  }
+  #checkout{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #checkout>button{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+  #container {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  #container > div {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    
+  }
+  #container>div>img{
+    width: 100%;
+    height: 50%;
+  }
+  #del{
+    padding: 20px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
   }

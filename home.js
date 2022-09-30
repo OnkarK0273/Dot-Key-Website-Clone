@@ -138,7 +138,7 @@ let cont = document.querySelector("#grid")
 
         // push data to add to card localstorage
         button.addEventListener("click",()=>{
-            let obj = new addtocard(product_name,img1)
+            let obj = new addtocard(product_name,img1,price_new)
             arr.push(obj)
             localStorage.setItem("addtocard",JSON.stringify(arr))
             
@@ -156,9 +156,10 @@ let cont = document.querySelector("#grid")
 }
 append(data)
 
-function addtocard (n,i){
+function addtocard (n,i,p){
     this.name = n,
     this.img = i,
     this.size = "100ml"
+    this.price=p
 
 }
