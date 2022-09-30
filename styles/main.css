@@ -3,10 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid rgba(128, 128, 128, 0.384);
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +29,18 @@
     flex-wrap: wrap;
     /* border: 1px solid red; */
   }
-  #navbar>div>img{
-    width: 100%;
+  #navbar img{
+    width: 50%;
     height: 100%;
+    
   }
   i{
-    font-size: 30px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
   }
 
   /* #navbar div{

@@ -1,3 +1,7 @@
+
+
+
+
 let productData = JSON.parse(localStorage.getItem("productData"))
 let count = 0
 const append = (data)=>{
@@ -36,7 +40,7 @@ const append = (data)=>{
     div1.className = "mySlides"
 
     let image1 = document.createElement("img")
-    image1.id = "slide1"
+    image1.id = 
     image1.src = img1
     image1.style.width = "100%"
 
@@ -59,6 +63,11 @@ const append = (data)=>{
         ch1img.id = "column1"
         ch1img.style.width = "100%"
 
+        ch1img.addEventListener("click",()=>{
+         image1.src = img1
+         div1.append(image1)
+        })
+
         // append img into ch1
         ch1.append(ch1img)
 
@@ -72,6 +81,11 @@ const append = (data)=>{
         ch2img.id = "column2"
         ch2img.style.width = "100%"
 
+        ch2img.addEventListener("click",()=>{
+         image1.src = img2
+         div1.append(image1)
+        })
+
         // append img into ch2
         ch2.append(ch2img)
 
@@ -84,6 +98,11 @@ const append = (data)=>{
         ch3img.className = "demo cursor"
         ch3img.id = "column3"
         ch3img.style.width = "100%"
+
+        ch3img.addEventListener("click",()=>{
+         image1.src = img3
+         div1.append(image1)
+        })
 
         // append img into ch3
         ch3.append(ch3img)
@@ -199,26 +218,40 @@ const append = (data)=>{
  
  let p1 = document.querySelector("#text>#slide1")
  p1.addEventListener("click",()=>{
-    p1.style.borderBottom = "1px solid black"
+    
     slidimg.src = slider1
     slid.append(slidimg)
  })
 
  let p2 = document.querySelector("#text>#slide2")
  p2.addEventListener("click",()=>{
-    p2.style.borderBottom = "1px solid black"
+    
     slidimg.src = slider2
     slid.append(slidimg)
  })
 
  let p3 = document.querySelector("#text>#slide3")
  p3.addEventListener("click",()=>{
-    p3.style.borderBottom = "1px solid black"
+    
     slidimg.src = slider3
     slid.append(slidimg)
  })
 
  slid.append(slidimg)
+
+ // poster 2
+ let po2 = document.querySelector("#poster2")
+ let po2image = document.createElement("img")
+ po2image.src = poster2
+ po2image.style.width = "100%"
+ po2.append(po2image)
+
+ // poster 3
+ let po3 = document.querySelector("#poster3")
+ let po3image = document.createElement("img")
+ po3image.src = poster3
+ po3image.style.width = "100%"
+ po3.append(po3image)
 
 
 }
@@ -227,60 +260,8 @@ append(productData)
 
 // button working
 
+import { navbar } from '../components/navbar.js';
+let nav = document.getElementById("navbar")
+nav.innerHTML = navbar()
 
 
-
-
-
-
-
-/*
-benifets1
-: 
-"72 Hr Probiotics Gel Moisturizer with Hyaluronic and Rice water "
-benifets2
-: 
-"Strengthens skin’s barrier to retain moisture"
-benifets3
-: 
-"Balances skin's microbiome and improves overall skin texture"
-benifets4
-: 
-"Oil-free, lightweight, quick-absorbing gel moisturizer"
-benifets5
-: 
-"Skin appears plump, hydrated and dewy"
-img1
-: 
-"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/image_6483441_4_900x.jpg?v=1663398401"
-img2
-: 
-"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3-Probiotics-Gel_360x.jpg?v=1663392956"
-img3
-: 
-"https://cdn.shopify.com/s/files/1/0361/8553/8692/products/6-Probiotics-Gel_360x.jpg?v=1663392956"
-poster1
-: 
-"https://i.ibb.co/Zg6gmmq/poster1-4.png"
-poster2
-: 
-"https://i.ibb.co/88yFRDj/poster2-4.png"
-poster3
-: 
-"https://cdn.shopify.com/s/files/1/0361/8553/8692/files/image_369.png?v=1660645343"
-price_new
-: 
-"395"
-product_name
-: 
-"72 HR Hydrating Probiotic Gel Moisturizer With Hyaluronic & Japanese Rice Water| For Healthy, Hydrated Skin| Normal to Oily Skin"
-slider1
-: 
-"https://i.ibb.co/RHF5RqP/slider1-4.png"
-slider2
-: 
-"https://i.ibb.co/vwBdHMB/slider2-4.png"
-slider3
-: 
-"https://i.ibb.co/vd2Vr1h/slider3-4.png"
-*/

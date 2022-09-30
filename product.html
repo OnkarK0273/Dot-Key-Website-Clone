@@ -4,148 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link rel="stylesheet" href="./styles/product.css">
+    
+    <link rel="stylesheet" href="./styles/main.css">
+
     <title>Product</title>
     <style>
-        body {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: 0;
-        }
-
-        * {
-        box-sizing: border-box;
-        margin: 0;
-        }
-
-        img {
-        vertical-align: middle;
-        }
-        .container {
-          display: flex;
-          flex-direction: column;
-          row-gap: 20px;
-
-        }
-
-        .mySlides>img{
-          border-radius:15px
-        }
-
-        .row {
-          display: flex;
-          justify-content: space-between;
-
-        }
-
-     
-        .column {
-        
-          width: 25%;
-        
-        }
-        .column>img{
-          border-radius: 15px;
-        }
-
-        #proContainer{
-            width: 90%;
-            margin: auto;
-            display: flex;
-            border: 0px solid black;
-            justify-content: space-between;
-        }
-        #proContainer>div{
-            width: 47%;
-            border: 0px solid black;
-        }
-        .details{
-          display: flex;
-          flex-direction: column;
-          row-gap: 20px;
-          text-align: center;
-          padding: 10px;
-        }
-        .details>h1{
-          margin-top: 0;
-        }
-        .details>p{
-          margin-bottom: 0;
-        }
-        .details>small{
-          
-          border: 0px solid black;
-        }
-        .details>ul{
-          text-align: start;
-          border: 0px solid black;
-          display: flex;
-          flex-direction: column;
-          row-gap: 25px;
-        }
-        ul>li{
-          font-size: 20px;
-          font-weight: 100;
-        }
-        #size{
-          width: 50%;
-          display: flex;
-          justify-content: space-between;
-          margin: auto;
-         
-        }
-        #first{
-          background-color: rgba(128, 128, 128, 0.052);
-          padding: 15px;
-          border:1.5px solid black;
-          border-radius: 5px;
-          
-        }
-        #second{
-          display: flex;
-          border:1px solid rgba(128, 128, 128, 0.852);
-          width: 80px;
-          justify-content: space-between;
-          align-items: center;
-        }
-        #second>div{
-          border:1px solid rgba(128, 128, 128, 0.334);
-          width: 33%;
-          height: 100%;
-          padding: 12px;
-        }
-        /* poster - 1 */
-        #poster1{
-          margin-top: 20px;
-          width: 100%;
-          border: 0px solid black;
-        }
-
-        /* slider text */
-        #text{
-          display: flex;
-          text-align: center;
-          justify-content: space-around;
-          border-bottom: 1px solid gray;
-        }
-        #slide1,#slide2,#slide3{
-          border: none;
-          width: 33%;
-          height: 100%;
-          padding: 20px;
-
-        }
-        #text>p{
-          font-size: 20px;
-          cursor: pointer;
-        }
-
-        /* slider */
        
-
-
 
     </style>
 </head>
 <body>
+  <!-- navbar -->
+  <div id="navbar">
+
+  </div>
     
    
    <!-- product container -->
@@ -178,11 +59,180 @@
     </div>
 
 
+    <!-- poster2 -->
+    <div id="poster2">
+
+    </div>
+
+    <div id="ingridiance">
+      <h2>CLEAN FORMULATIONS</h2>
+      <p>Cleaner Ingredients</p>
+    </div>
+    <!-- poster3 -->
+
+    <div id="poster3">
+
+    </div>
+
+    <!-- faq -->
+
+  
+
+<div class="dropdown">
+  <button  onclick="myFunction()" id="dropdown" class="dropbtn">FAQ ⬇</button>
+  <div id="myDropdown" class="dropdown-content">
+    <h3>Q. Can I use the 10% Niacinamide Serum if I have normal skin? How will it be beneficial?</h3>
+    <p>Yes. You can use our 10% Niacinamide+Cica Serum for normal skin as well. Even though the serum has been curated to treat acne, excess oil & pigmentation, for normal skin like yours, it will only further refine your skin texture & make it appear healthier.</p>
+    <h3>Q. How does 10% Niacinamide serum visibly minimize the pores?</h3>
+  <p>A. Over the years of research, Niacinamide is clinically proven to minimize the appearance of pores. Our 10% Niacinamide serum has been curated to control excess oil with 2x efficacy. The serum penetrates deep to unclog pores of excess oil, thereby eventually reducing the appearance of pores when used regularly, twice a day. It restores pore functioning, soothes skin & improves overall skin texture.</p>
+  <h3>Q. Is 10% Niacinamide+Cica serum suitable for sensitive skin?</h3>
+  <p>A. Yes! Our serum contains ingredients like Cica, Niacinamide & 3% Tranexamic Acid, all of which come together to control acne breakouts and soothe irritation, redness & skin inflammation, making it great for sensitive skin as well.</p>
+  <h3>Q. What's the benefit of 3% Tranexamic in the serum?</h3>
+  <p>A. The concentration of 3% Tranexamic in this serum boosts the bioavailability of Niacinamide which further makes this effective against concerns like hyperpigmentation, dark spots & pore appearance.</p>
+  <h3>Q. Suggest me a routine with this serum & other Dot & Key Products?</h3>
+  <p>A. For PM: Cica Calming Face Wash->Cica Toner->10% Niacinamide+Cica Serum->Cica Night Gel For AM: Cica Calming Face Wash->Cica Toner->10% Niacinamide+Cica Serum->72Hrs Probiotic Face Cream->Sunscreen</p>
+  </div>
+  
+</div>
+
+
+<!-- rituval container -->
+<h2 style="text-align:center;margin-top:20px;">Suggested Rituals</h2>
+<div id="topSection">
+  <div id="topimgDiv">
+    <!--first-->
+    <div class="topA">
+      <div id="topimg">
+       <a href="#"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyofwatermeloncleanser.jpg?v=1663392104"></a> 
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.8/5 <span style="color:blue">(313)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>VITAMIN C+E MOISTURISER SLICICON ORANGE & .. </p></div>
+      <div id="pricetop"><p><span id="cut">Rs:595.00</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:565.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+<!--second-->
+    <div class="topA">
+      <div id="topimg">
+     <a href="#" ><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyofcicanightgel.jpg?v=1663393073"></a>  
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.7/5 <span style="color:blue">(252)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>RETNOL & CERAMIDE AGE NIGHT CREAM WITH.. </p></div>
+      <div id="pricetop"><p><span id="cut"></span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:395.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+<!--Third-->
+    <div class="topA">
+      <div id="topimg">
+     <a href="#"> <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CopyofVITCMOIST.jpg?v=1663393087"></a>  
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.7/5 <span style="color:blue">(282)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>72 HR HYDRATING PROBIOTICMOISTURISER  HYALURON.. </p></div>
+      <div id="pricetop"><p><span id="cut">Rs:945</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:695.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+<!--fourth-->
+    <div class="topA">
+      <div id="topimg">
+       <a href="#"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyoflipplumping.jpg?v=1663392224"></a> 
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.7/5 <span style="color:blue">(182)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>CICA NIACINAMIDE NIGHT GELGREEN TEA,TEA TREE OIL. </p></div>
+      <div id="pricetop"><p><span id="cut">Rs:495.00</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:470.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+  </div>
+</div>
+
+<div id="review">
+  <img src="./pic/rev1.png" alt="">
+  <img src="./pic/re2.png" alt="">
+</div>
+
+<div class="feedback">
+  <div>⭐⭐⭐⭐ 09/8/2022</div>
+  <div>
+    <h2>Shweta Singh</h2>
+    <h4>Fragrance-Free Formulations</h4>
+    <p>With my acne marks making me feel conscious I would wear a lot of makeup which ended up in my skin breaking out even more. After seeing this serum on IG ads I thought I would try it and it's truly been a blessing for my skin. It soothes and calms my acne, and causes no irritation after application. I have very sensitive skin and since it's fragrance-free, it is suitable for my skin type!</p>
+  </div>
+</div>
+
+<div class="feedback">
+  <div>⭐⭐⭐⭐ 19/7/2022</div>
+  <div>
+    <h2>Ritika Poddar</h2>
+    <h4>Safe & Effective</h4>
+    <p>I have been using this product for the last 7 days now & I see a difference. My skin feels less oily and my acne marks have also slightly faded. I was pleasantly surprised at the efficacy of this serum as it's excellent for treating damaged skin. I am very satisfied with this product and I surely recommend it to all.</p>
+  </div>
+</div>
+
+<div class="feedback">
+  <div>⭐⭐⭐⭐⭐ 28/6/2022</div>
+  <div>
+    <h2>Priyal Sanghvi</h2>
+    <h4>Best for fading dark spots</h4>
+    <p>I just love using this 10% Niacinamide serum after I exfoliate my skin as it makes my skin barrier really healthy and makes it supple, I tried other brands but it broke me out but this serum is a gem it helped fade my dark spots within 2 weeks and lighten up my acne marks. Totally in love with this product!</p>
+  </div>
+</div>
+
+<div class="feedback">
+  <div>⭐⭐⭐⭐⭐ 31/5/2022</div>
+  <div>
+    <h2>Shubho Singh</h2>
+    <h4>Perfect for Sensitive Skin</h4>
+    <p>The serum is perfect for oily acne-prone skin. It’s quite lightweight and gets easily absorbed. I have been using this serum for a week now & I can feel the reduction in oiliness on my face. I have been using this for 5 days now & I can say it's a must-have in your skincare regime!</p>
+  </div>
+</div>
+
+
+
 
     
 </body>
 </html>
 <script>
+  function myFunction() {
+   document.getElementById("myDropdown").classList.toggle("show");
+ }
+ 
+ // Close the dropdown if the user clicks outside of it
+ window.onclick = function(event) {
+   if (!event.target.matches('.dropbtn')) {
+     var dropdowns = document.getElementsByClassName("dropdown-content");
+     var i;
+     for (i = 0; i < dropdowns.length; i++) {
+       var openDropdown = dropdowns[i];
+       if (openDropdown.classList.contains('show')) {
+         openDropdown.classList.remove('show');
+       }
+     }
+   }
+ }
+
    
 </script>
-<script src="./script/product.js"></script>
+<script type="module"  src="./script/product.js"></script>
