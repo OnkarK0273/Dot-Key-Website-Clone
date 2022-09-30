@@ -35,7 +35,7 @@ form.addEventListener("submit",function(e){
             flag=true;
             localStorage.setItem("signin",JSON.stringify(el));
             alert("Sign Up Successful");
-            window.location.href="./Home/home.html"; 
+            // window.location.href="./Home/home.html"; 
         }
     });
     if(flag===false){
