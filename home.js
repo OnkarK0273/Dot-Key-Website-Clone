@@ -166,5 +166,6 @@ function addtocard (n,i,p){
     this.img = i,
     this.price = p,
     this.size = "100ml"
+    this.price=p
 
 }
