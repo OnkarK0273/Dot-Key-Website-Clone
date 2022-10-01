@@ -546,7 +546,11 @@
    width: 20%;
     border: 1px solid rgba(128, 128, 128, 0.464);
     text-align: center;
-    border-radius: 5px
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
 
 }
 #grid>div>img{
@@ -567,9 +571,10 @@
     color: white;
     width: 100%;
     border: none;
-    padding: 15px;
+    padding: 25px;
     border-radius: 0 0 5px 5px;
-    cursor:pointer
+    cursor:pointer;
+
 
 }
 

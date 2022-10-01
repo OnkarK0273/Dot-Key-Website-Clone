@@ -120,7 +120,7 @@ let cont = document.querySelector("#grid")
         })
 
         let star = document.createElement("div")
-        star.id = "star"
+        //star.id = "star"
 
         let i = document.createElement("i")
         i.setAttribute("class", "material-icons")
