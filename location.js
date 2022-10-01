@@ -34,7 +34,7 @@ form.addEventListener("submit",function(e){
             flag=true;
             localStorage.setItem("signin",JSON.stringify(el));
             alert("Order will be delivered within 7 working days");
-            window.location.href="./Home/home.html"; 
+            window.location.href="home.html"; 
         }
     });
     if(flag===false){
