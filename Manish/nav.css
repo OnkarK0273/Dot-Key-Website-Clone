@@ -3,7 +3,8 @@
     width: 100%;
     height: 300px;
     left: 0;
-    background: white;
+
+    background: #fdfdfd;
      
 }
 
@@ -14,13 +15,27 @@
  nav>ul>li>a{
     color: black;
     line-height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
  }
 
 
- .uull li a{
+ .ing_show li a{
 line-height: 40px;
 font-family: Arial, Helvetica, sans-serif;
 color:gray;
+padding-left: 80px;
+
  }
+nav ul ul{
+position: static;
+display: none ;
+}
+a>span{
+ position: absolute;
+top: 50%;
+right: 29px;
+ 
+transform: translateY(-50%);
+
+}
 
