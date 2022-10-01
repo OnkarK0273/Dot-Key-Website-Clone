@@ -1,6 +1,7 @@
   #navbar{
     background-color: white;
     position:sticky;
+    height: auto;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    background-color: white;
+    /* background-color: rgb(159, 37, 37); */
     justify-content: space-between;
     align-items: center;
     /* z-index: 10; */
@@ -16,8 +17,8 @@
  
   #navbar > div {
     width: 80%;
-    height: 100%;
-    /* border: 1px solid black; */
+    height: 50%;
+    border: 0px solid black;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
