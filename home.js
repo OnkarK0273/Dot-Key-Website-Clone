@@ -120,18 +120,15 @@ let cont = document.querySelector("#grid")
         })
 
         let star = document.createElement("div")
-        star.id = "star"
+        
 
-        let i = document.createElement("i")
-        i.setAttribute("class", "material-icons")
-        i.style.fontSize = "15px"
-        i.style.color = "yellow"
+        
         
         let a = document.createElement("a")
-        a.innerText = `⭐ ${count.toFixed(2)}/5`
-        star.append(i,a)
+        a.innerText = `⭐ ${4.5}/5`
+        star.append(a)
 
-        let name = document.createElement("P")
+        let name = document.createElement("p")
         name.innerText = product_name
 
         let price = document.createElement("p")
