@@ -223,7 +223,7 @@
   .topA{
     height:100%;
     width:21%;
-  
+    border:1px solid rgba(128, 128, 128, 0.334);
     margin: auto;
     border-radius:5px;
     }
@@ -446,7 +446,11 @@
       
       margin-top:4ch;
      }
-     
+     .newB{
+      width: 50%;
+      border: 0px solid black;
+
+     }
      #brandOne{
       height:50px;
       width:80%;
@@ -580,6 +584,9 @@
     cursor:pointer;
     border: 1px solid black;
 
+}
+footer{
+  margin-top: 20px;
 }
 
 

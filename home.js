@@ -166,3 +166,16 @@ function addtocard (n,i,p){
     this.price=p
 
 }
+
+
+let btn=document.getElementById("theButton");
+btn.addEventListener("click",function(){
+  clicked()
+  // console.log("hii")
+})
+
+function clicked() {
+    var text = document.getElementById("popup");
+    text.classList.toggle("hide");
+    text.classList.toggle("show");
+  }
