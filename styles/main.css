@@ -140,6 +140,18 @@
   label{
     float: left;
   }
+  #total {
+    text-align: center;
+   
+    display: flex;
+    justify-content: center;
+  }
+  .rate {
+    font-family: sans-serif;
+    font-weight: lighter;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 28%;
+  }
   #checkout{
     width: 80%;
     height: auto;
@@ -147,6 +159,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4%;
   }
   #checkout>button{
     padding: 20px;
@@ -155,6 +168,7 @@
     color: white;
     border-radius: 5px;
   }
+  
   #container {
     width: 70%;
     height: auto;
