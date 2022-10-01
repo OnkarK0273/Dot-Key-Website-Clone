@@ -59,6 +59,6 @@ function Display(data) {
   let check=document.getElementById("checkout");
 
    check.addEventListener("click",function(){
-         window.location.href="shipping_page.html";
+         window.location.href="information-page.html";
    })
 

@@ -6,6 +6,38 @@
     font-weight: bold;
     margin-top: 5%;
   }
+  #append_cart_data > div {
+    display: flex;
+    margin-top: 2%;
+  }
+  #cart-div {
+    width: 85%;
+    margin: auto;
+  }
+  #append_cart_data > div > img {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+  }
+  #total_cash {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  #prize {
+    font-size: small;
+    font-weight: bold;
+  }
+  #append_cart_data > div > #cart-text{
+    width: 65%;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    margin: auto;
+    color: #3e3e39;
+    margin-left: 15px;
+    /* border: solid; */
+  }
   #discount_text > p:first-child {
     color: #848482;
   }
@@ -19,9 +51,9 @@
   hr {
     width: 85%;
   }
-  #append_cart_data {
+  /* #append_cart_data {
     height: 100px;
-  }
+  } */
   #gift_card {
     width: 85%;
     margin: auto;

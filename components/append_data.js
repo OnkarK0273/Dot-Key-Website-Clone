@@ -9,13 +9,13 @@ function total() {
   </div>
   <hr>
   <div id="gift_card">
-    <input type="number" placeholder="Gift card or discount code">
+    <input id="discount-code" type="number" placeholder="Gift card or discount code">
  <button id="apply">Apply</button>
   </div>
  <hr>
  <div id="subtotal">
   <p>Subtotal</p>
-  <p></p>
+  <p id='rupee'></p>
  </div>
  <div id="shipping">
   <p>Shipping <a href="https://www.dotandkey.com/36185538692/policies/shipping-policy.html?locale=en-IN">?</a></p>
@@ -24,7 +24,7 @@ function total() {
  <hr>
  <div id="total_amount">
   <p>Total</p>
-  <p></p>
+  <p id='total_cash'></p>
  </div>
 </div>`
 }
