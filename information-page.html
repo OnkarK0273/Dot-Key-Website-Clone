@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Information - Dot & Key - Checkout</title>
   </head>
+  <link rel="stylesheet" href="discount.css">
   <style>
     body {
       margin: 0;
@@ -107,20 +108,12 @@
       font-size: 13px;
       gap: 1%;
     }
-    #contact-info {
-      font-family: sans-serif;
-      width: 80%;
-      margin: auto;
-    }
+   
     #update-checkbox {
       display: flex;
       font-family: sans-serif;
       gap: 1%;
       font-size: 14px;
-    }
-    #email {
-      border: solid 1px;
-      height: 100px;
     }
     #pin-sec {
       display: flex;
@@ -174,6 +167,39 @@
       margin-top: 8%;
       width: 80%;
     }
+    #page-option > #ip:visited {
+        color: black;
+    }
+    #email_box > div > img {
+      width: 55px;
+      border-radius: 5px;
+    }
+    #email_box {
+      display: flex;
+      gap: 2%;
+    }
+    #email_box > div > p {
+     font-size: 14px;
+    }
+    #e_name {
+      display: flex;
+      gap: 4%;
+    }
+    #contact-info {
+      font-family: sans-serif;
+      width: 80%;
+      margin: auto;
+    }
+    #log-out {
+      position: absolute;
+      margin-top: 35px;
+      text-decoration: none;
+      color: #ff6781;
+      font-size: 13px;
+      margin-bottom: 0;
+      margin-left: 67px;
+      font-weight: 600;
+    }
   </style>
   <body>
     <div id="payment-page-header">
@@ -187,15 +213,24 @@
         <div id="page-option">
           <a class="page-name-only" href="">Cart</a>
           <a class="right" href="">></a>
-          <a class="page-name-only" href="information-page.html">Information</a>
+          <a id="ip" class="page-name-only" href="information-page.html">Information</a>
           <a class="right" href="">></a>
           <a class="page-name-only" href="shipping_page.html">Shipping</a>
           <a class="right" href="">></a>
-          <a class="page-name-only" href="">Payment</a>
+          <a class="page-name-only" href="payment.html">Payment</a>
         </div>
         <div id="contact-info">
           <p>Contact information</p>
-          <div id="email"></div>
+          <div id="email_box">
+            <div>
+              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybsd7cw9VxpeBObuBE90Al3a1OB0kgPhyHg&usqp=CAU' alt="">
+            </div>
+            <div id="e_name">
+              <p id="email_name"></p>
+              <p id="email_id"></p>
+            </div>
+           <a href="login.html" id="log-out">Log out</a>
+          </div>
           <div id="update-checkbox">
             <input type="checkbox" />
             <p>Keep me up to date on news and exclusive offers</p>
@@ -352,9 +387,10 @@
           >
         </div>
       </div>
-      <div id="product-data"></div>
+      <div id="product-data">
+       
     </div>
   </body>
 </html>
 
-<script src="information-page.js"></script>
+<script type="module" src="information-page.js"></script>

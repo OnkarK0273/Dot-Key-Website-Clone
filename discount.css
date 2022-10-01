@@ -1,0 +1,76 @@
+#discount_text {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5%;
+  }
+  #discount_text > p:first-child {
+    color: #848482;
+  }
+  #discount_text > p:last-child {
+    color: #ff6781;
+    margin-left: 1%;
+  }
+  p {
+    font-family: sans-serif;
+  }
+  hr {
+    width: 85%;
+  }
+  #append_cart_data {
+    height: 100px;
+  }
+  #gift_card {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5%;
+  }
+  #gift_card > input {
+    width: 72%;
+    padding: 10px;
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  #gift_card > input::placeholder {
+    font-size: 14px;
+  }
+  #gift_card > #apply {
+    padding: 13px 20px;
+    border-radius: 5px;
+    background-color: #616160;
+    color: white;
+    border: transparent;
+  }
+  #subtotal {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666665;
+  }
+  #shipping {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #565655;
+  }
+  #shipping > p:last-child {
+    font-weight: bolder;
+    font-size: 14px;
+  }
+  #total_amount {
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+ 

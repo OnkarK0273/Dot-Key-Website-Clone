@@ -20,7 +20,7 @@ const navbar = ()=>{
       <button class="button1"><a href="cart.html"><i class="fi fi-rr-shopping-bag"></i></a></button>
       <button class="button1"><a href="signin.html"><i class="fi fi-rr-user"></i></a></button>
     </div>
-  </div>`
+  </div>`;
 }
 
 export {navbar}

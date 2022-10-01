@@ -2,6 +2,7 @@ import {total} from './components/append_data.js';
 let product_data = document.getElementById('product-data')
 product_data.innerHTML = total();
 
+
 let LS_address = JSON.parse(localStorage.getItem('full-address'))
 
 const addressData = (LS_address) => {
@@ -10,14 +11,6 @@ const addressData = (LS_address) => {
     proper_address.innerText = LS_address.address + ",  " + LS_address.apartment + ",  " + LS_address.city + ",  " + LS_address.state + ",  " + LS_address.country;
 }
 addressData(LS_address)
-
-let btn = document.getElementById('continue_shopping')
-btn.addEventListener('click', () => {
-    getData()
-})
-function getData() {
-    window.location.href='payment.html'
-}
 
 
 let signinLS= JSON.parse(localStorage.getItem("signup"))

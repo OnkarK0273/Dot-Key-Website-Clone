@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shipping - Dot & Key - Checkout</title>
   </head>
+  <link rel="stylesheet" href="discount.css">
   <style>
     body {
       margin: 0;
@@ -66,7 +67,7 @@
         width: 95%;
         margin: auto;
     }
-    #contact_div > #contact-1, #contact-2 > p {
+    #contact_div > #contact-1, #contact-2 > p:first-child {
         font-family: sans-serif;
         font-size: 14px;
         color: rgb(121, 95, 61);
@@ -174,6 +175,13 @@
         font-size: 15px;
         font-weight: bold;
     }
+    #page-option > #sp:visited {
+        color: black;
+    }
+    #login_email, #proper_address {
+      color: black;
+      font-size: 14px;
+    }
   </style>
   <body>
     <div id="payment-page-header">
@@ -189,9 +197,9 @@
           <a class="right" href="">></a>
           <a class="page-name-only" href="information-page.html">Information</a>
           <a class="right" href="">></a>
-          <a class="page-name-only" href="shipping_page.html">Shipping</a>
+          <a id="sp" class="page-name-only" href="shipping_page.html">Shipping</a>
           <a class="right" href="">></a>
-          <a class="page-name-only" href="">Payment</a>
+          <a class="page-name-only" href="payment.html">Payment</a>
         </div>
        <div id="contact_div">
         <div id="contact-1">
@@ -245,4 +253,4 @@
   </body>
 </html>
 
-<script src="shipping_page.js"></script>
+<script type="module" src="shipping_page.js"></script>

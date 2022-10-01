@@ -1,3 +1,7 @@
+
+
+
+
 // images array
 let img1 = ["https://cdn.shopify.com/s/files/1/0361/8553/8692/products/vitc.jpg?v=1663393830","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyofcicanightgel_900x.jpg?v=1663393073","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyoflipplumping_900x.jpg?v=1663392224","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/image_6483441_4_900x.jpg?v=1663398401"]
 let img2 = ["https://cdn.shopify.com/s/files/1/0361/8553/8692/products/2_18_900x.jpg?v=1663393830","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3-CICA-NIGHT-GEL_360x.jpg?v=1663393073","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/4-Lip-Plumpin-Mask_b23993c9-a240-4c02-ba5f-e769c33a5f0c_360x.jpg?v=1663392224","https://cdn.shopify.com/s/files/1/0361/8553/8692/products/3-Probiotics-Gel_360x.jpg?v=1663392956"]
@@ -116,18 +120,15 @@ let cont = document.querySelector("#grid")
         })
 
         let star = document.createElement("div")
-        star.id = "star"
+        
 
-        let i = document.createElement("i")
-        i.setAttribute("class", "material-icons")
-        i.style.fontSize = "15px"
-        i.style.color = "yellow"
+        
         
         let a = document.createElement("a")
-        a.innerText = `⭐ ${count.toFixed(2)}/5`
-        star.append(i,a)
+        a.innerText = `⭐ ${4.5}/5`
+        star.append(a)
 
-        let name = document.createElement("P")
+        let name = document.createElement("p")
         name.innerText = product_name
 
         let price = document.createElement("p")
@@ -162,5 +163,6 @@ function addtocard (n,i,p){
     this.img = i,
     this.price = p,
     this.size = "100ml"
+    this.price=p
 
 }

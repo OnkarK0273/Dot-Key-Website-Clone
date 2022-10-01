@@ -1,3 +1,22 @@
+import {total} from './components/append_data.js';
+let product_data = document.getElementById('product-data')
+product_data.innerHTML = total();
+
+let signinLS= JSON.parse(localStorage.getItem("signup"))
+// console.log(signinLS)
+
+
+function append_email(signinLS) {
+    let email_name = document.getElementById('email_name')
+    let email_id = document.getElementById('email_id')
+    signinLS.forEach(el => {
+        email_name.innerText = el.name;
+        email_name.style.textTransform='Uppercase'
+        email_id.innerText = (el.email);
+    });
+}
+append_email(signinLS)
+
 function constructor(co,a,ap,c,s,p,n) {
     this.country = co;
     this.address = a;
