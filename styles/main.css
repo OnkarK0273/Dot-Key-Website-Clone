@@ -12,11 +12,11 @@
     /* background-color: rgb(159, 37, 37); */
     justify-content: space-between;
     align-items: center;
-    /* z-index: 10; */
+    z-index: 1;
   }
  
   #navbar > div {
-    width: 80%;
+    width: 90%;
     height: 50%;
     border: 0px solid black;
     margin: auto;
@@ -26,7 +26,8 @@
     align-items: center;
   }
   #navbar > div > div {
-    width: 32%;
+    border: 0px solid black;
+    width: 33%;
     display: flex;
     flex-wrap: wrap;
     /* border: 1px solid red; */
@@ -66,6 +67,7 @@
   #theButton {
     background-color: white;
     border: none;
+    border: 0px solid black;
   }
   .right {
     display: flex;
@@ -98,6 +100,8 @@
     display: block;
     width: 100%;
     padding: 10px;
+    
+    border: none;
   }
   #gol{
     margin-top: 20px;
@@ -106,6 +110,7 @@
     padding: 10px;
     background-color: red;
     color: white;
+    border: none;
   }
   #form{
     margin-top: 20px;
