@@ -12,11 +12,11 @@
     /* background-color: rgb(159, 37, 37); */
     justify-content: space-between;
     align-items: center;
-    /* z-index: 10; */
+    z-index: 1;
   }
  
   #navbar > div {
-    width: 80%;
+    width: 90%;
     height: 50%;
     border: 0px solid black;
     margin: auto;
@@ -26,7 +26,8 @@
     align-items: center;
   }
   #navbar > div > div {
-    width: 32%;
+    border: 0px solid black;
+    width: 33%;
     display: flex;
     flex-wrap: wrap;
     /* border: 1px solid red; */
@@ -66,6 +67,7 @@
   #theButton {
     background-color: white;
     border: none;
+    border: 0px solid black;
   }
   .right {
     display: flex;
@@ -98,6 +100,8 @@
     display: block;
     width: 100%;
     padding: 10px;
+    
+    border: none;
   }
   #gol{
     margin-top: 20px;
@@ -106,11 +110,15 @@
     padding: 10px;
     background-color: red;
     color: white;
+    border: none;
   }
   #form{
     margin-top: 20px;
     width: 100%;
     padding: 5px;
+  }
+  h1{
+    margin-bottom: 40px;
   }
   input[type="email"],[type="password"],[type="text"],[type="number"]{
     width: 100%;
@@ -135,6 +143,18 @@
   label{
     float: left;
   }
+  #total {
+    text-align: center;
+   
+    display: flex;
+    justify-content: center;
+  }
+  .rate {
+    font-family: sans-serif;
+    font-weight: lighter;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 28%;
+  }
   #checkout{
     width: 80%;
     height: auto;
@@ -142,6 +162,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4%;
   }
   #checkout>button{
     padding: 20px;
@@ -150,6 +171,7 @@
     color: white;
     border-radius: 5px;
   }
+  
   #container {
     width: 70%;
     height: auto;
@@ -176,4 +198,104 @@
     background-color: black;
     color: white;
     border-radius: 5px;
+  }
+  footer{
+    margin-top: 20px;
+  }
+  *{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    margin: 0;
+    }
+  #fmain {
+      color: rgb(103, 101, 100);
+      display: flex;
+      margin: auto;
+      font-family: Arial;
+      width: 100%;
+      justify-content: space-around;
+      border: 0px solid black;
+      margin-top: 20px;
+      padding: 30px;
+    }
+    #terms{
+      border: 0px solid black;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+  
+    }
+    #also{
+      border: 0px solid black;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+  
+    }
+    #dot{
+      margin-top: 30px;
+    }
+    #fmain > div > p {
+      font-size: 19px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      color: rgb(65, 59, 52);
+    }
+    a {
+      color: rgb(112, 107, 101);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #follw {
+      display: flex;
+      border: 0px solid black;
+      margin-top: 20px;
+     
+      align-items: center;
+    }
+    #follw > a {
+      padding: 5px;
+      margin-left: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      border: 0px solid black;
+      
+    }
+    #inp>input{
+   border-top: 0ch;
+   border-right: 0ch;
+   border-left: 0ch;
+   text-align: center;
+   padding: 10px;
+   color: black;
+   margin: 10px;
+   width: 200px;
+   font-size: 15px;
+   
+    }
+    #inp>button{
+      padding: 12px;
+      background-color: black;
+      color: aliceblue;
+      font-size: 20px;
+      border: 0ch;
+  cursor: pointer;
+    }
+   
+    #down{
+      margin-top: 20px;
+      background-color: rgb(191, 139, 240);
+      
+      border: 0ch;
+      padding: 15px;
+      font-size: 17px;
+  }
+  #down>a{
+      color: aliceblue;
+  }
+  hr{
+      margin: 0px;
+      padding: 0%;
+      color: aqua;
+      width: 100%;
   }

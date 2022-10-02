@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  margin: 0;
+  }
 #fmain {
     color: rgb(103, 101, 100);
     display: flex;
@@ -5,6 +10,26 @@
     font-family: Arial;
     width: 100%;
     justify-content: space-around;
+    border: 0px solid black;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  #terms{
+    border: 0px solid black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+  }
+  #also{
+    border: 0px solid black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+  }
+  #dot{
+    margin-top: 30px;
   }
   #fmain > div > p {
     font-size: 19px;
@@ -19,13 +44,17 @@
   }
   #follw {
     display: flex;
+    border: 0px solid black;
     margin-top: 20px;
+   
+    align-items: center;
   }
   #follw > a {
-    margin-top: 20px;
+    padding: 5px;
     margin-left: 10px;
     font-size: 20px;
     font-weight: bold;
+    border: 0px solid black;
     
   }
   #inp>input{

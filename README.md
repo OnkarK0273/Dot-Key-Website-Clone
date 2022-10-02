@@ -29,4 +29,14 @@ Dot & Key is an online marketplace. Paraben-free cosmetics such as body lotions,
 - HTML,CSS,JavaScript,LocalStorage
 
 
+## Photos
+
+![Home](https://user-images.githubusercontent.com/110043714/193418933-da922f7d-6519-42e9-862c-7ec2158e4b2b.png)
+
+
+![Home (1)](https://user-images.githubusercontent.com/110043714/193418945-fac1323f-b2d7-4564-8752-fc4a70799c2d.png)
+
+![Home (2)](https://user-images.githubusercontent.com/110043714/193418951-cc06e596-545c-459c-845b-b63c36d7e84e.png)
+
+![Home (3)](https://user-images.githubusercontent.com/110043714/193418959-5aeeb560-a6ae-4481-a35d-f94b31120d38.png)
 
