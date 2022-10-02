@@ -6,7 +6,7 @@ const navbar = ()=>{
       <i class="fi fi-rr-menu-burger"></i>
     </div>
     <div>
-    <a href="./home.html"> <img
+    <a href="./index.html"> <img
     src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348"
     alt=""
   /></a>

@@ -1,37 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-sc
+    ale=1.0">
+    <link rel="stylesheet" type="text/css" href="./home.css">
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/904/762/png-clipart-ampersand-baskerville-typographic-ligature-typography-italic-type-the-end-miscellaneous-text.png" type="image/x-icon">
    
-      /* #body{
-        width: 100%;
-        height: 8000px;
-        margin-top: 100px;
-        border: 1px solid red;
-        position: relative;
-      } */
-     
-    </style>
-  </head>
-  <body>
-    <div id="navbar">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./Manish/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
 
-       
+    <link
+    rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+  />
+  <script src="https://kit.fontawesome.com/cace51320d.js" crossorigin="anonymous"></script>
+    <title>Home Page</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+  
+  <div id="navbar">
+    <div>
+      <div>
+        <i class="fi fi-rr-menu-burger"></i>
+      </div>
+      <div>
+      <a href="index.html"> <img
+      src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348"
+      alt=""
+    /></a>
+      </div>
+      <div class="right">
+        <button id="theButton" >
+          <i class="fi fi-rr-search"></i>
+        </button>
+        <input type="text" name="popup" id="popup" class="hide" />
+        <a href="./location.html"><i class="fi fi-rs-marker"></i></a>
+        <a href="./cart.html"><i class="fi fi-rr-shopping-bag"></i></a>
+        <button class="button1"><a href="signin.html"><i class="fi fi-rr-user"></i></a></button>
+      </div>
     </div>
-    <div id="body"></div>
-  </body>
+  </div>
+
+  <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_17.jpg?v=1663324415" style="width:100%">
+      </div>
+  
+      <div class="mySlides fade">
+       <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_18.jpg?v=1663324415" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+      <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/CATE_DESK_18.jpg?v=1663324418" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+      <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_19.jpg?v=1663324415" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+      <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/CATE_DESK_17.jpg?v=1663324415" style="width:100%">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+<!--loved customer-->
+<div id="Lovedcustomer">
+<div class="text1">Loved By</div>
+<div class="text2">10 Lakh+ Customers</div>
+<div id="spin">
+  <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3_Sale_Banner_Desktop_copy_5.jpg?v=1664257999">
+</div>
+</div>
+<div style="padding:25px ;">
+  <div class="text1">SHOP OUR</div>
+  <div class="text2" >New Arrivals</div>
+</div>
+
+<div id="grid">
+
+</div>
+
+<!--new arrivals--
+<div id="newArrivals">
+<div class="text1">SHOP OUR</div>
+<div class="text2">NEW ARRIVALS</div>
+  <div id="arrivals">
+    <div id="grid">
+
+    </div>
+      slideshow using array of objects
+  </div>
+</div>-->
+
+
+<!--bestseller-->
+<div id="top">
+<div class="text1">OUR</div>
+<div class="text2">BEST SELLERS</div>
+<div id="face">
+  <p><span style="color:rgb(242, 46, 111)">SKIN</span> | BODYCARE| HAIRCARE| NUTRITION</p>
+</div>
+
+ <!---slideshow using array of objects-->
+  
+ <div id="topSection">
+  <div id="topimgDiv">
+    <!--first-->
+    <div class="topA">
+      <div id="topimg">
+       <a href="#"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyofwatermeloncleanser.jpg?v=1663392104"></a> 
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.8/5 <span style="color:blue">(313)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>VITAMIN C+E MOISTURISER <br>SLICICON ORANGE & TRIPLE.. </p></div>
+      <div id="pricetop"><p><span id="cut">Rs:595.00</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:565.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+<!--second-->
+    <div class="topA">
+      <div id="topimg">
+     <a href="#" ><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyofcicanightgel.jpg?v=1663393073"></a>  
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.7/5 <span style="color:blue">(252)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>RETNOL & CERAMIDE AGE<br>NIGHT CREAM WITH HIBISCUS|.. </p></div>
+      <div id="pricetop"><p><span id="cut"></span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:395.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+<!--Third-->
+    <div class="topA">
+      <div id="topimg">
+     <a href="#"> <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CopyofVITCMOIST.jpg?v=1663393087"></a>  
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.7/5 <span style="color:blue">(282)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>72 HR HYDRATING PROBIOTIC<br> MOISTURISER  HYALURONIC &.. </p></div>
+      <div id="pricetop"><p><span id="cut">Rs:945</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:695.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+<!--fourth-->
+    <div class="topA">
+      <div id="topimg">
+       <a href="#"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyoflipplumping.jpg?v=1663392224"></a> 
+      </div>
+      <div id="topRating">
+        <div id="ratingdiv">
+          <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+          <div id="rating"><pre>4.7/5 <span style="color:blue">(182)</span></pre></div>
+        </div>
+       
+      </div>
+      <div id="destop"><p>CICA NIACINAMIDE NIGHT GEL <br>GREEN TEA,TEA TREE OIL &.. </p></div>
+      <div id="pricetop"><p><span id="cut">Rs:495.00</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:470.00</span></p></div>
+      <div id="addtoCart">ADD TO CART</div>
+    </div>
+  </div>
+</div>
+
+
+</div>   
+
+<!--spotlight section-->
+
+<div id="spotlight">
+  <div class="text1">IN THE</div>
+  <div class="text2">SPOTLIGHT</div>
+  <div id="spotdiv">
+      <div class="spotdiv1">
+          <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_24.jpg?v=1663587081">
+      </div>
+      <div class="spotdiv1">
+          <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_22.jpg?v=1663324771">
+      </div>
+  </div>
+</div>
+
+  <div id="newdiv">
+  <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_21.jpg?v=1663324772">
+  </div>
+
+
+  <div id="top">
+    <div class="text1">SHOP OUR</div>
+  <div class="text2">TOP CATEGORIES</div>
+  <div id="face">
+    <p><span style="color:rgb(242, 46, 111)">FACE CREAMS</span> | FACE SERUMS| FACE WASHES| FACE MASKS</p>
+  </div>
+  <div id="topSection">
+    <div id="topimgDiv">
+      <!--first-->
+      <div class="topA">
+        <div id="topimg">
+         <a href="#"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/CopyofVITCMOIST.jpg?v=1663393087"></a> 
+        </div>
+        <div id="topRating">
+          <div id="ratingdiv">
+            <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+            <div id="rating"><pre>4.8/5 <span style="color:blue">(313)</span></pre></div>
+          </div>
+         
+        </div>
+        <div id="destop"><p>VITAMIN C+E MOISTURISER <br>SLICICON ORANGE & TRIPLE.. </p></div>
+        <div id="pricetop"><p><span id="cut">Rs:595.00</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:565.00</span></p></div>
+        <div id="addtoCart">ADD TO CART</div>
+      </div>
+<!--second-->
+      <div class="topA">
+        <div id="topimg">
+       <a href="#" ><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyof72hr.jpg?v=1663392956"></a>  
+        </div>
+        <div id="topRating">
+          <div id="ratingdiv">
+            <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+            <div id="rating"><pre>4.7/5 <span style="color:blue">(252)</span></pre></div>
+          </div>
+         
+        </div>
+        <div id="destop"><p>RETNOL & CERAMIDE AGE<br>NIGHT CREAM WITH HIBISCUS|.. </p></div>
+        <div id="pricetop"><p><span id="cut"></span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:395.00</span></p></div>
+        <div id="addtoCart">ADD TO CART</div>
+      </div>
+<!--Third-->
+      <div class="topA">
+        <div id="topimg">
+       <a href="#"> <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyofretinol.jpg?v=1663393080"></a>  
+        </div>
+        <div id="topRating">
+          <div id="ratingdiv">
+            <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+            <div id="rating"><pre>4.7/5 <span style="color:blue">(282)</span></pre></div>
+          </div>
+         
+        </div>
+        <div id="destop"><p>72 HR HYDRATING PROBIOTIC<br> MOISTURISER  HYALURONIC &.. </p></div>
+        <div id="pricetop"><p><span id="cut">Rs:945</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:695.00</span></p></div>
+        <div id="addtoCart">ADD TO CART</div>
+      </div>
+<!--fourth-->
+      <div class="topA">
+        <div id="topimg">
+         <a href="#"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/products/Copyofcicanightgel.jpg?v=1663393073"></a> 
+        </div>
+        <div id="topRating">
+          <div id="ratingdiv">
+            <div id="star"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQwYzbsnSNDWzVQxTsRhrAStVVjUB18IouQ&usqp=CAU"></div>
+            <div id="rating"><pre>4.7/5 <span style="color:blue">(182)</span></pre></div>
+          </div>
+         
+        </div>
+        <div id="destop"><p>CICA NIACINAMIDE NIGHT GEL <br>GREEN TEA,TEA TREE OIL &.. </p></div>
+        <div id="pricetop"><p><span id="cut">Rs:495.00</span>&nbsp &nbsp &nbsp  &nbsp <span style="color:rgb(242, 46, 111)">Rs:470.00</span></p></div>
+        <div id="addtoCart">ADD TO CART</div>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+  
+  <!--download section-->
+  <div id="download">
+    <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/0_new_appArtboard_1_1_1.png?v=1656572545">
+  </div>
+
+  <!--ingridients section-->
+  <div id="ing">
+    <div class="text1">SHOP BY</div>
+  <div class="text2">INGREDIENTS</div>
+    <div class="main-carousel">
+      <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4C-Ingredient_c982a1f9-7880-49cc-918d-de954c4869d7.jpg?v=1662534604"> </div>
+      <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4E-Ingredient_93fa35cb-9567-4296-ad26-718ef6fb9ece.jpg?v=1662534604"></div>
+      <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4A-Ingredient_a52bf031-90a7-4b4f-afb1-1786ddf2f2e0.jpg?v=1662534604"></div>
+      <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4F-Ingredient_73eaecaf-da67-4a0a-8884-ab3215f5d1ce_1.jpg?v=1662534604"></div>
+      <div class="cell"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4D-Ingredient_2c86db10-ce47-4ff7-9792-2ebf0192e29e_1.jpg?v=1662534604"></div>
+    
+    </div> 
+
+
+  </div>
+
+  <div id="shop">
+<a href="#"><div id="shopbtn"> SHOP NOW ></div></a> 
+  </div>
+
+
+  <!---skincare section-->
+
+<div id="skincare">
+<div class="text1">GUIDE TO</div>
+<div class="text2">SKINCARE</div>
+<div class="main-carousel">
+  <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/serum.jpg?v=1652438356"> </div>
+  <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/glow_3.jpg?v=1652438348"></div>
+  <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/acne_3_7d4b5389-228e-42ce-9008-0454cff9e3d2.jpg?v=1652438447"></div>
+  <div class="cell"><img id="new" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/moist.jpg?v=1652438356"> </div>
+</div>
+</div>
+
+<!--free section-->
+<div id="free">
+<img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/D_K_Homepage_BOGO_Banner_Desktop_Version.gif?v=1659006084">
+ </div>
+
+ <!--love section-->
+<div id="love">
+<div class="text2">LOVE IS GREATER</div>
+<div class="text1">WHEN SHARED</div>
+
+<div id="loveimg"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-2_6_1.png?v=1656572658"></div> 
+</div>
+
+
+<!--clean beauty section-->
+<div id="clean">
+<div id="one">
+  <div class="text2">CLEAN BEAUTY</div>
+  <div class="text1">WITH UNCOMPROMISED EFFICACY</div>
+</div>
+<div id="two">
+  <div class="twoA"><p>At Dot & Key, we strive to find the missing <b>"dots"</b> in your skincare regime and are obsessed with providing</p></div>
+  <div class="twoA"><p>solutions or <b>"keys"</b> to these.</p></div>
+</div>
+<div id="three">
+  <div class="twoA"><p>Our revolutionary products are crafted with utmost care and love for you. By blending <b>luxurious botanicals</b></p></div>
+  <div class="twoA"><p>with <b>high performaance actives,</b> we bring to you clean formulations that are absolutely safe, delightfully  gentle</p></div>
+  <div class="twoA"><p>and unquestionably effective.</p></div>
+</div>
+ </div>
+
+ <!--four  flex images-->
+ <div id="fourth">
+  <div id="fourthOne">
+<div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/3-ICONS.png?v=1645770027"></div>
+<div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1-ICONS_b6233563-9f3e-43f6-b158-5205886e2120.png?v=1645779546"></div>
+<div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/4-ICONS.png?v=1645770027"></div>
+<div class="img1"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/2-ICONS.png?v=1645770027"></div>
+</div>
+ </div>
+
+
+ <!--gif section-->
+ <div id="gif">
+  <div id="gifdiv">
+    <div class="main-carousel">
+      <div class="cell"><img id="newB" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ezgif.com-gif-maker_ff4dc633-9c9a-40b1-810f-2614147ac68d_720x.gif?v=1615273304"> </div>
+      <div class="cell"><img id="newB" src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Little-things-that-matter-2_720x.jpg?v=1614740606"> </div>
+      <div class="cell"><img id="newB" src="https://media3.giphy.com/media/YTQGLe3TfMNUszIAtG/giphy.webp?cid=ecf05e47pcere6akr1ddvngdpwha0j3lyo7ba58gt967h6q2&rid=giphy.webp&ct=g"> </div>
+    
+    </div>
+  </div>
+  </div>
+  
+
+
+<!--brand section-->
+<div id="brand">
+<div id="brandOne"><p>AS SEEN IN</p></div>
+<div id="brandTwo">
+  <div id="brandTextOne"><p>"Latest and greatest natural for in products for safe,non-toxic great &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skincare."</p></div>
+  <div id="brandTextTwo"><p>"Dot & Key are hoping to spotlight all the body parts you forget to took &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;after."</p></div>
+  <div id="brandTextOne"><p>"Even a 10 step routine can have blind spots. Dot & key fills in those &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gaps."</p></div>
+</div>
+<div id="brandThree">
+  <div class="brandImgOne"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-3_9501c881-18bc-4482-a41a-bae5979fd0b9_180x.png?v=1614742030"> </div>
+  <div class="brandImgOne"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Vogue-3-min_180x.png?v=1614754318"></div>
+  <div class="brandImgOne"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/elle-magazine-vector-logo-2_8a4b49eb-9d7c-4864-954a-fe48fb05a208_180x.png?v=1614742030"></div>
+</div>
+</div>
+
+<!--customer review section -->
+<div id="customer">
+  <div class="text1">CUSTOMER</div>
+  <div class="text2">REVIEWS</div>
+  <div id="myslide">
+  <div class="main-carousel">
+    <div class="cell"><img id="new" src="./homepic/a.png"> </div>
+    <div class="cell"><img id="new" src="./homepic/b.png"></div>
+    <div class="cell"><img id="new" src="./homepic/c.png"> </div>
+    <div class="cell"><img id="new" src="./homepic/d.png"> </div>
+    <div class="cell"><img id="new" src="./homepic/e.png"> </div>
+    <div class="cell"><img id="new" src="./homepic/f.png"> </div>
+    <div class="cell"><img id="new" src="./homepic/g.png"> </div>
+
+  </div>
+</div>
+</div>
+
+<!--journal section-->
+<div id="journal">
+  <div class="text1">OUR</div>
+  <div class="text2">SKINCARE JOURNAL</div>
+  <div id="lastSlide">
+    <div class="main-carousel">
+      <div class="cell"><img class="newB" src="./homepic/one.png"> </div>
+      <div class="cell"><img class="newB" src="./homepic/two.png"></div>
+      <div class="cell"><img class="newB" src="./homepic/three.png"> </div>
+      <div class="cell"><img class="newB" src="./homepic/four.png"> </div>
+      <div class="cell"><img class="newB" src="./homepic/six.png"> </div>
+     </div>
+  </div>
+</div>
+
+
+<!-- footer -->
+<footer>
+  <hr />
+
+  <div id="fmain">
+    <div id="terms">
+      <p>GET KNOW US</p>
+      <h3> <a href="https://www.dotandkey.com/pages/about-us"> ABOUT US </a></h3>
+      <h3>   <a href="https://www.dotandkey.com/pages/find-us">   CONTACT US </a> </h3>
+      <h3><a href="https://divas.dotandkey.com/">EARTHCARE</a></h3>
+      <h3><a href="https://divas.dotandkey.com/"> AFFILIATE PROGRAM</a></h3>
+      <h3>
+        <a href="https://www.dotandkey.com/pages/terms-conditions">
+          TERMS & CONDITION</a
+        >
+      </h3>
+      <h3>
+        <a href="https://www.dotandkey.com/pages/refunds-cancellation"
+          >REFUND & CANCELLATION</a
+        >
+      </h3>
+      <h3>
+        <a href="https://www.dotandkey.com/pages/privacy-policy">
+          PRIVACY POLICY</a
+        >
+      </h3>
+      <h3>
+        <a href="https://www.dotandkey.com/pages/orders-shipping"
+          >ORDER & SHIPPING</a
+        >
+      </h3>
+      <h3>
+        <a href="https://www.dotandkey.com/pages/payment-terms">
+          PAYMENT TERMS</a
+        >
+      </h3>
+      <h3>
+        <a href="https://www.dotandkey.com/policies/terms-of-service"
+          >TERMS OF SERVICE</a
+        >
+      </h3>
+      <h3>
+        <a href="https://www.dotandkey.com/policies/refund-policy"
+          >REFUND POLICY</a
+        >
+      </h3>
+    </div>
+    <div id="also">
+      <p>ALSO AVAILABLE ON</p>
+      <h3>
+        <a
+          href="https://www.nykaa.com/brands/dot-key/c/7675?root=search,brand_menu,brand_list,Dot%20&%20Key&sourcepage=home&rtqu=Dot%20%26%20Key"
+        >
+          NYKAA</a
+        >
+      </h3>
+      <h3>
+        <a
+          href="https://www.amazon.in/stores/node/19401367031?_encoding=UTF8&field-lbr_brands_browse-bin=Dot%20%26%20Key&ref_=bl_dp_s_web_19401367031"
+          >AMAZON</a
+        >
+      </h3>
+      <h3>
+        <a
+          href="https://www.flipkart.com/search?q=dot%20and%20key&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+          >FLIPKART</a
+        >
+      </h3>
+      <h3>
+        <a href="https://www.myntra.com/dot-and-key?src=bc">MYNTRA</a>
+      </h3>
+    </div>
+    <div id="stay">
+      <p>STAY UPDATED</p>
+      <div id="inp">
+        <input type="email" placeholder="example@example.com" id="email" />
+        <button>SUBMIT</button>
+      </div>
+
+      <button id="down">
+        <a href="https://onelink.to/4bzhqy"> DOWNLOAD THE APP</a>
+      </button>
+      <div id="follw">
+        <h4>FOLLOW US</h4>
+        <a href="https://business.facebook.com/dotandkey"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/dotandkey.skincare/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/channel/UCD7U0EUBYg9YlL-zVZjkjfA"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+      <h4 id="dot">© 2022 Dot & Key</h4>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!--sliding ingredients code-->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+$('.main-carousel').flickity({
+// options
+cellAlign: 'left',
+wrapAround:true,
+freeScroll:true,
+});
+</script>
+
+
+</body>
 </html>
-<script type="module" src="index.js"></script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+// hii
+
+</script>
+<script  src="./index.js"></script>
